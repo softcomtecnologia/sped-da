@@ -43,7 +43,7 @@ Para a geração dos documentos auxiliares devem feitas as seguintes consideraç
 * Todas as classes devem observar os principios S.O.L.I.D. e atender aos PSR-2 e PSR-4.
 * Todos os métodos devem possuir testes unitários utilizando o phpunit, de forma a evitar a quebra do funcionamento das classes.
 * Será montado um esquema que permitirá o "pull request" apenas se os testes unitários não falharem.
-* No caso especifico da NFC-e (Nota fiscal do consumidor) existe um outro pacote que poderá vir a ser usado, trata-se do [*"posprint"*](https://github.com/nfephp-org/posprint) devido ao fato desse documento auxiliar normalmente ser impresso em impressoras térmicas POS, que não trabalham adequadamente com PDF e devem receber os dados em sua pópria linguagem (RAW data). Dessa forma o pacote *"posprint"* poderá tornar-se ser uma das dependências desse pacote.
+* No caso especifico da NFC-e (Nota fiscal do consumidor) existe um outro pacote que poderá vir a ser usado, trata-se do [*"posprint"*](https://github.com/softcomtecnologia/posprint) devido ao fato desse documento auxiliar normalmente ser impresso em impressoras térmicas POS, que não trabalham adequadamente com PDF e devem receber os dados em sua pópria linguagem (RAW data). Dessa forma o pacote *"posprint"* poderá tornar-se ser uma das dependências desse pacote.
 * Para a conversão dos dados em PDF é necessário o uso de uma biblioteca que seja ativamente mantida, usada por um grande contingênte de programadores e que atenda minimamente os PSR. Uma grande atenção deve ser dedicada a esse ponto pois com a inclusão do PHP7 podem surgir problemas de incompatibilidade com bibliotecas que não sejam mantidas atualizadas.
 
 ## Contribuindo
@@ -53,13 +53,13 @@ Este é um projeto totalmente *OpenSource*, para usa-lo e modifica-lo você não
 
 *Durante a fase de desenvolvimento e testes este pacote deve ser instalado com:*
 ```bash
-composer require nfephp-org/sped-da:dev-master
+composer require softcomtecnologia/sped-da:dev-master
 ```
 
 *Ou ainda alterando o composer.json do seu aplicativo inserindo:*
 ```json
 "require": {
-    "nfephp-org/sped-da" : "dev-master"
+    "softcomtecnologia/sped-da" : "dev-master"
 }
 ```
 
@@ -70,12 +70,12 @@ composer require nfephp-org/sped-da:dev-master
 
 *Os stable realeases estão disponíveis (mas com algumas classes ainda em desenvolvimento), pode ser instalado com:*
 ```bash
-composer require nfephp-org/sped-da
+composer require softcomtecnologia/sped-da
 ```
 Ou ainda alterando o composer.json do seu aplicativo inserindo:
 ```json
 "require": {
-    "nfephp-org/sped-da" : "^0.1"
+    "softcomtecnologia/sped-da" : "^0.1"
 }
 ```
 
@@ -102,26 +102,26 @@ Roberto L. Machado (owner and developer)
 Este pacote está diponibilizado sob LGPLv3 ou MIT License (MIT). Leia  [Arquivo de Licença](LICENSE.md) para maiores informações.
 
 
-[ico-stars]: https://img.shields.io/github/stars/nfephp-org/sped-nfe.svg?style=flat-square
-[ico-forks]: https://img.shields.io/github/forks/nfephp-org/sped-da.svg?style=flat-square
-[ico-issues]: https://img.shields.io/github/issues/nfephp-org/sped-da.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/nfephp-org/sped-da/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/nfephp-org/sped-da.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/nfephp-org/sped-da.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/nfephp-org/sped-da.svg?style=flat-square
-[ico-version]: https://img.shields.io/packagist/v/nfephp-org/sped-da.svg?style=flat-square
-[ico-license]: https://poser.pugx.org/nfephp-org/nfephp/license.svg?style=flat-square
+[ico-stars]: https://img.shields.io/github/stars/softcomtecnologia/sped-nfe.svg?style=flat-square
+[ico-forks]: https://img.shields.io/github/forks/softcomtecnologia/sped-da.svg?style=flat-square
+[ico-issues]: https://img.shields.io/github/issues/softcomtecnologia/sped-da.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/softcomtecnologia/sped-da/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/softcomtecnologia/sped-da.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/softcomtecnologia/sped-da.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/softcomtecnologia/sped-da.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/softcomtecnologia/sped-da.svg?style=flat-square
+[ico-license]: https://poser.pugx.org/softcomtecnologia/nfephp/license.svg?style=flat-square
 [ico-gitter]: https://img.shields.io/badge/GITTER-4%20users%20online-green.svg?style=flat-square
 
 
-[link-packagist]: https://packagist.org/packages/nfephp-org/sped-da
-[link-travis]: https://travis-ci.org/nfephp-org/sped-da
-[link-scrutinizer]: https://scrutinizer-ci.com/g/nfephp-org/sped-da/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/nfephp-org/sped-da
-[link-downloads]: https://packagist.org/packages/nfephp-org/sped-da
-[link-author]: https://github.com/nfephp-org
-[link-issues]: https://github.com/nfephp-org/sped-da/issues
-[link-forks]: https://github.com/nfephp-org/sped-da/network
-[link-stars]: https://github.com/nfephp-org/sped-da/stargazers
-[link-gitter]: https://gitter.im/nfephp-org/sped-da?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[link-packagist]: https://packagist.org/packages/softcomtecnologia/sped-da
+[link-travis]: https://travis-ci.org/softcomtecnologia/sped-da
+[link-scrutinizer]: https://scrutinizer-ci.com/g/softcomtecnologia/sped-da/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/softcomtecnologia/sped-da
+[link-downloads]: https://packagist.org/packages/softcomtecnologia/sped-da
+[link-author]: https://github.com/softcomtecnologia
+[link-issues]: https://github.com/softcomtecnologia/sped-da/issues
+[link-forks]: https://github.com/softcomtecnologia/sped-da/network
+[link-stars]: https://github.com/softcomtecnologia/sped-da/stargazers
+[link-gitter]: https://gitter.im/softcomtecnologia/sped-da?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 
